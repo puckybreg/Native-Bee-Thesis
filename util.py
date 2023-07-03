@@ -32,6 +32,9 @@ def import_and_shape_data():
   # Convert to seconds for the interval
   interval_and_weather_merged['interval'] = interval_and_weather_merged['interval'] / 1000000000
 
+  # rename same_insect column
+  interval_and_weather_merged.rename(columns={'same_insect': 'same_species'}, inplace=True)
+
   return interval_and_weather_merged
 
 
@@ -44,7 +47,7 @@ def run_pycox_on_group(df, num_durations):
   df_train = df.drop(df_val.index)
 
   cols_standardize = []
-  cols_leave = ['interval', 'status', 'temp', 'dwpt', 'wspd', 'coco', 'same_insect']
+  cols_leave = ['interval', 'status', 'temp', 'dwpt', 'wspd', 'coco', 'same_species']
 
   standardize = [([col], StandardScaler()) for col in cols_standardize]
   leave = [(col, None) for col in cols_leave]
