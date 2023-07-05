@@ -1,5 +1,9 @@
 # Native-Bee-Thesis
-Juypter Notebook for data analysis work on Native Bee Monitoring Project
+Juypter Notebook for data analysis work on Native Bee Monitoring Project.
+
+## Background
+While working at the United States Geological Survey Native Bee Lab, I devised an innovative hardware solution to perform cost-effective pollinator-monitoring by transforming donated cell phones into pollinator camera-traps. By placing these modified phones in the Patuxent wildlife preserve, we were able to capture repeated photos of individual pollen-producing blooms. I then designed and developed lightweight data pipelines to process and analyze this novel photo data. These pipelines consolidated input from various lab teams, processed over 200 GB of video and photo data, and integrated with third-party APIs, ultimately storing the combined results in a database. Alongside these contributions, I built a series of predictive models incorporating neural networks, logistic regression, and various other methods of time-to-event prediction to study the impact of ecological factors on bee abundance and diversity. These models not only influenced survey design for future bee monitoring but also had implications for environmental policy at the lab. This repo contains the models used during this project. 
+
 ## Set-up
 
 ### Installing Dependencies
