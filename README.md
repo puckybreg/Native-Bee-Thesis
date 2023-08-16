@@ -16,3 +16,30 @@ Before running, it would be ideal to create a new virtual environment I use venv
 - To run through a traditional Cox Regression Hazards model and the PyCox Nueral Network model please see the notebook: `notebook_for_data_analysis.ipynb`
 - To run Tibshirani's stacking methodology with Logistic Regression classifier model see the notebook: `Stacking_notebook.ipynb`
 - To use multiple regression to derive covariate weights from survival curves see the notebook: `regression_on_survival_curve.ipynb`
+
+
+## Data Directory
+
+The `pollinator_arrival_interval_data.csv` has the following columns and data types:
+
+
+| Column              | Data Type                        | Description                                  |
+| ------------------- | -------------------------------- | -------------------------------------------- |
+| endtime             | text                             | End time of the arrival interval             |
+| starttime           | text                             | Start time of the arrival interval           |
+| interval            | numeric                          | Length of interval in seconds                |
+| departing_insect    | text                             | Departing insect ID                          |
+| arriving_insect     | text                             | Arriving insect ID                           |
+| sheet_title         | text                             | Title of the datasheet (includes plant ID)   |
+| timestamp_pd        | timestamp                        | Timestamp in pandas format                   |
+| timestamp_pd_rounded| timestamp                        | Rounded timestamp to the nearest hour        |
+| same_species        | boolean                          | Boolean indicating if the pollinator arrival is the same species of pollinator as the previous arrival |
+| temp                | float                            | The air temperature in °C                    |
+| dwpt                | float                            | The dew point in °C                          |
+| rhum                | integer                          | The relative humidity in percent (%)          |
+| prcp                | float                            | The one hour precipitation total in mm        |
+| wdir                | integer                          | The wind direction in degrees (°)            |
+| wspd                | float                            | The average wind speed in km/h               |
+| pres                | float                            | The sea-level air pressure in hPa            |
+| coco                | numeric                          | Categorization of the day's weather (COCO value)|
+| status              | numeric                          | Status code                                  |
