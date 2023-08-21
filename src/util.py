@@ -16,8 +16,8 @@ def say_hello():
   print('Hello_world')
 
 def import_and_shape_data():
-  interval_and_weather_merged = pd.read_csv('./interval_and_weather_merged.csv')
-  interval_and_weather_merged_reyna = pd.read_csv('./reyna_interval_and_weather_merge.csv')
+  interval_and_weather_merged = pd.read_csv('./data/interval_and_weather_merged.csv')
+  interval_and_weather_merged_reyna = pd.read_csv('./data/reyna_interval_and_weather_merge.csv')
   df_list = [interval_and_weather_merged, interval_and_weather_merged_reyna ]
   print(interval_and_weather_merged.shape)
   print(interval_and_weather_merged_reyna.shape)
