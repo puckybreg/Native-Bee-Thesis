@@ -8,9 +8,12 @@ While working at the United States Geological Survey Native Bee Lab, I devised a
 
 ### Installing Dependencies
 
-Make sure you have python 3 installed. I used python 3.9.13
+Make sure you have python 3.8, 3.9, or 3.10 installed. I used python 3.9.13
 
 Before running, it would be ideal to create a new virtual environment I use venv. With the virtual environment activated run `pip install -r requirements.txt` 
+
+To run the jupyter notebooks, connect the virtual environment you created to Jupyter with `python -m ipykernel install --user --name=[virtual_env_name]`
+
 
 ## Training and Deploying time-to-event predictor models with Python Notebooks
 - To run through a traditional Cox Regression Hazards model and the PyCox Nueral Network model please see the notebook: `notebook_for_data_analysis.ipynb`
